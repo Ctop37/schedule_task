@@ -1,0 +1,6 @@
+div {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 241, 163);
+    margin: 5px;
+}

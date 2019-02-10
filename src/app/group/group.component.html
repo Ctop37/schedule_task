@@ -1,0 +1,8 @@
+<div class="group">
+  <div class="group-name">
+    {{group.name}}
+  </div>
+  <div class="task-list">
+    <app-task *ngFor="let task of group.tasks" [task]="task"></app-task>
+  </div>
+</div>

@@ -1,0 +1,5 @@
+div {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(154, 230, 253);
+}
