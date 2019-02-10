@@ -18,6 +18,14 @@ Some Angular web app to schedule daily/weekly/monthly tasks.
 | rxjs                         | 6.3.3
 | typescript                   | 3.2.2
 
+# How to build
+
+```
+cd schedule_task
+npm install
+ng build
+```
+
 # How to launch
 
 ```
