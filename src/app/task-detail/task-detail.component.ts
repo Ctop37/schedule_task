@@ -1,5 +1,4 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { TaskDetail } from '../entities/entities';
 
 @Component({
   selector: 'app-task-detail',
@@ -8,7 +7,7 @@ import { TaskDetail } from '../entities/entities';
 })
 export class TaskDetailComponent implements OnInit {
 
-  @Input() detail: TaskDetail;
+  @Input() detail: string;
 
   constructor() { }
 
