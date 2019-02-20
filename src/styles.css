@@ -1,3 +1,23 @@
 body {
     font-family: "Verdana", sans-serif;
 }
+
+.critic-1 {
+    color: black;
+    background-color: rgb(115, 255, 96);
+}
+
+.critic-2 {
+    color: black;
+    background-color: rgb(253, 218, 63);
+}
+
+.critic-3 {
+    color: white;
+    background-color: rgb(255, 70, 45);
+}
+
+.critic-4 {
+    color: white;
+    background-color: rgb(41, 41, 41);
+}

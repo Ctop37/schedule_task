@@ -1,4 +1,6 @@
-<div>
-  {{task.name}}
+<div [className]="'task critic-' + task.criticity">
+  <div class="task-name">
+    {{task.name}}
+  </div>
   <app-task-detail [detail]="task.description"></app-task-detail>
 </div>
