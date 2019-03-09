@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Group, Task } from './entities/entities';
 import { GroupService } from './group.service';
+import { TaskService } from './task.service';
 
 @Component({
   selector: 'app-root',
@@ -9,20 +10,20 @@ import { GroupService } from './group.service';
 })
 export class AppComponent implements OnInit {
 
-  title = 'TODO-tasks';
-
   groups: Group[];
-  test = 'ok';
-
-  constructor(private groupService: GroupService) {}
+  user = 'louis';
+  constructor(private groupService: GroupService, private taskService: TaskService) {}
 
   getGroups(): void {
     this.groupService.getGroups()
     .subscribe(result => {
-      this.test = 'truc';
       this.groups = result;
-      this.test = 'machin';
     });
+  }
+
+  doTask(idTask: number) {
+    this.taskService.doTask(idTask, this.user)
+    .subscribe(result => window.location.reload());
   }
 
   ngOnInit() {

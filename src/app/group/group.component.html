@@ -3,6 +3,9 @@
     {{group.name}}
   </div>
   <div class="task-list">
-    <app-task *ngFor="let task of group.tasks" [task]="task"></app-task>
+    <app-task 
+      *ngFor="let task of group.tasks" 
+      [task]="task"
+      (taskEvent)="doTask($event)"></app-task>
   </div>
 </div>

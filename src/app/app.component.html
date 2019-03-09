@@ -1,4 +1,7 @@
 <app-title></app-title>
 <div>
-    <app-group *ngFor="let group of groups" [group]="group"></app-group>
+    <app-group 
+      *ngFor="let group of groups" 
+      [group]="group"
+      (taskEvent)="doTask($event)"></app-group>
 </div>

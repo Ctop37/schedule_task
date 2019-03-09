@@ -1,4 +1,6 @@
-<div [className]="'task critic-' + task.criticity">
+<div 
+  [className]="'task critic-' + task.criticity"
+  (click)="openTaskModal()">
   <div class="task-name">
     {{task.name}}
   </div>
