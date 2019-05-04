@@ -8,7 +8,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 })
 export class GroupService {
 
-  private groupUrl = 'http://localhost:3000/group';
+  private groupUrl = 'http://localhost:8080/groups/';
 
   constructor(private http: HttpClient) { }
 

@@ -8,7 +8,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 })
 export class TaskService {
 
-  private taskUrl = 'http://localhost:3000/task';
+  private taskUrl = 'http://localhost:8080/tasks/';
   private doTaskUrl = '/do';
 
   constructor(private http: HttpClient) { }
@@ -16,7 +16,7 @@ export class TaskService {
   doTask(taskId, user): Observable<Object> {
     const body = {
       'id': taskId,
-      'user': user
+      'util': user
     };
     console.log(body);
     return this.http.post<Object>(this.taskUrl + this.doTaskUrl, body);
